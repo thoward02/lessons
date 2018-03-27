@@ -1,5 +1,6 @@
 //jsMain.js
 //Controls the main menu for py lessons
+//Check
 const {ipcRenderer} = require('electron');
 var sys = require('sys');
 var exec = require('child_process').exec;
