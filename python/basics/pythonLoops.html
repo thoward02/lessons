@@ -3,7 +3,7 @@
 <head>
   <title> Python  Functions </title>
   <!--Back button script -->
-  <script type = "text/javascript">var mainWindow = "main.html";var nextLesson = "pythonFunctions.html";document.addEventListener('DOMContentLoaded', function(){document.getElementById('backButton').addEventListener('click', function(){window.location=mainWindow;}); document.getElementById('nextButton').addEventListener('click', function(){window.location = nextLesson;}); }); </script>
+  <script type = "text/javascript">var mainWindow = "main.html";document.addEventListener('DOMContentLoaded', function(){document.getElementById('backButton').addEventListener('click', function(){window.location=mainWindow;})}); </script>
   <!-- System buttons -->
   <script type="text/javascript">
     //const {ipcRenderer} = require('electron');
@@ -31,11 +31,13 @@
   </div>
   <div id='Main'>
     <p id="headTitle"> Loops In Python </p>
-    <h id='header'> Loops </h>
+    <h class='header'> Loops </h>
+    <hr class='leftBreak'>
     <p> A loop in programming is how you run a task over and over again until it is finished completing its task. </p>
     <p> Lets say I wanna get all the apples in a box. Well the logic behind this is "while apples in box: getApple()" </p>
     <p> There are 3 different types of loops </p>
-    <h id='header'> While loop </h>
+    <h class='header'> While loop </h>
+    <hr class='leftBreak'>
     <p> A while loop does a task while two values equal (in most cases) The code for it in python looks like this: </p>
 <code class="blockCode">
 <pre>
@@ -61,7 +63,8 @@
 </pre>
 </code>
     <p> This runs the code 9 times, then prints the done message. "But but what if you wanna run it 10 times!", well you would just add one to the loop number. Why? Because when x finally hits the y, the code isn't told to run because x now equals y. </p>
-    <h id="header"> For Loops </h>
+    <h class="header"> For Loops </h>
+    <hr class='leftBreak'>
     <p> What if we want to run code for every item inside of the box? Well the logic would be: "for item in box: runSomeCode()"</p>
     <p> In python you often use for loops to run code for every item in a list. Here is an example of for loops: </p>
 <code class='blockCode'>
@@ -75,12 +78,12 @@
     <p> Now in this code we multiply every item in the list by two. First we define our list of numbers, and set them equal to x. Next is our command that tell the system to run a for loop. We say <code class='singleCode'>for numbers in x:</code>, now this command is pretty logical, and the only confusing part is "Numbers". As you run a for loop you go from item to item within the list, running your code on said item. By saying "numbers" we define a variable for the system to put the list section in.</p>
     <p> The first time we run the for loop, the "Numbers" variable gets set to equal the first item in the list, in this case it is 1. The second time we run the for loop, the "Numbers" variable gets set to equal 2, because that is what is in the second item in the list. This will go on and go on until there is no more list items in the list. If you have 400 items ina list, you will run your code 800 times</p>
     <p> "Numbers" can be changed to what ever you want because it is a variable. </p>
-    <p> Now there is one thing you haven't seen before, and that is the <code class='singleCode'>int()</code> function. This is a python function that turns a variable into a integer. We put the numbers variable inside of it just in case the system thinks it is a string. See in python you can multiply strings. If we were todo <code class="singleCode">'x' * 100</code> We would get 100 xs. You see this becomes a problem when you are just looking todo some simple math. You try multipling two variables and you could end up getting what you wanted, the product of the two sums, or you could get an error / a bunch of letters that you did not want. </p>
-    <p> There are two of these functions. Since you can not do <code class="singleCode">print("hey "+1)</code> because the python can not put
+    <p> Now there is one thing you haven't seen before, and that is the <code class='singleCode'>int()</code> function. This is a python function that turns a variable into a integer. We put the numbers variable inside of it just in case the system thinks it is a string. See in python you can multiply strings. If we were todo <code class="singleCode">'x' * 100</code> We would get 100 x's. You see this becomes a problem when you are just looking todo some simple math. You try multipling two variables and you could end up getting what you wanted, the product of the two sums, or you could get an error or a bunch of letters that you did not want. </p>
+    <p> There are two of these functions. The first is int(), and the second is str(). int() converts variables or characters into a number or integer. str() converts variables or text into a string, which is useful when you want to put a number and word together in a print function. For example ince you can not do <code class="singleCode">print("hey "+1)</code> because python doesn't like letters and numbers together, we can do <code class="singleCode">print("Hey"+str(1))</code> with the str() converting the number into a string. </p>
   </div>
   <div id='bottom-border'>
     <button id='backButton'>Back</button>
-    <button id='nextButton'>Next Lesson</button>
+
   </div>
   <style>
       #title {
