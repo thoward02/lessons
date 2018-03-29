@@ -12,9 +12,9 @@ function main(){
   });
   //Now we load our lesson buttons
   //See we could write a loop to add a button for each lesson, but that would add complications that we don't need :C
-  var lesson1 = ['Basics', 'pythonBasics.html']
-  var lesson2 = ['Functions', 'pythonFunctions.html']
-  var lesson3 = ['Loops', 'pythonLoops.html']
+  var lesson1 = ['Basics Of Python', 'Python_Basics.html']
+  var lesson2 = ['Functions In Python', 'Functions_In_Python.html']
+  var lesson3 = ['Loops In Python', 'Loops_In_Python.html']
   var lessons = [lesson1, lesson2, lesson3]
   console.log(lessons[1])
   for (var items in lessons) {
@@ -32,7 +32,7 @@ function main(){
       //Why do you do (y, name=this.id), because we need to transfer lessons[items][0] to this function, but its not working just doing (x = var)
       //So we set the id of the button to the var we need and carry it over using the this.id function.
       //We add y, so name doesn't get overwritten by the click data.
-      console.log(name)
+
       window.location = name; //This will load what ever page they click on xdddddd dear god i need mental help
 
     })

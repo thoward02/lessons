@@ -1,11 +1,11 @@
 {
-  "python": {
-      "basics":{
+  "Python": {
+      "Basics_Of_Python":{
         "main" : "main.html",
         "mainControl" : "jsMain.js",
-        "file1" : "pythonBasics.html",
-        "file2" : "pythonFunctions.html",
-        "file3" : "pythonLoops.html"
+        "file1" : "Python_Basics.html",
+        "file2" : "Functions_In_Python.html",
+        "file3" : "Loops_In_Python.html"
 
       },
       "discordBot": {
