@@ -6,12 +6,12 @@
   <script type="text/javascript">
     //const {ipcRenderer} = require('electron');
     function addButtons(){
-      document.getElementById('exit').addEventListener('click', function(){console.log('fuck');ipcRenderer.send('exit()');}); //Exit
+      document.getElementById('exit').addEventListener('click', function(){ipcRenderer.send('exit()');}); //Exit
       document.getElementById('minimize').addEventListener('click', function(){ipcRenderer.send('minimize()');}); //Min
     }
     document.addEventListener('DOMContentLoaded', function(){
       addButtons();
-      console.log('-webkit-app-region: no-drag !important;')
+      
     })
   </script>
 
@@ -94,7 +94,7 @@
 }
 #mainMenu:hover {
   background-color: #204d5e;
-  
+
 
 }
 #titleBanner {
