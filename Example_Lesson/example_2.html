@@ -1,0 +1,195 @@
+<!-- Basics for python - pythonFunctions.html -->
+<html>
+<head>
+  <title> Python  Functions </title>
+  <!--Back button script -->
+  <script type = "text/javascript">
+    //Okay so usually I keep this all in one line, but for the sake of comments I made it pretty
+    var mainWindow = "main.html"; //Here is the file name of the main file. It goes along with the main window. I shouldn't have to say it, but if you change the name of main.html in your system, and do not change it here to where they are identical, nothing is going to work.
+  document.addEventListener('DOMContentLoaded', function(){
+      document.getElementById('backButton').addEventListener('click', function(){
+        window.location=mainWindow;
+      });
+
+    });
+  </script>
+  <!-- System buttons -->
+  <script type="text/javascript">
+    //const {ipcRenderer} = require('electron');
+    function addButtons(){
+      document.getElementById('exit').addEventListener('click', function(){console.log('fuck');ipcRenderer.send('exit()');}); //Exit
+      document.getElementById('minimize').addEventListener('click', function(){ipcRenderer.send('minimize()');}); //Min
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+      addButtons();
+
+    });
+  </script>
+</head>
+<body>
+  <div id="top-border">
+    <div id="topButtons">
+    <svg id="exit" class= "systemButtons"height="16" width="16">
+      <circle cx="8"cy="8" r="8" stroke-color="red" width='3' fill="red" />
+    </svg>
+    <svg id="minimize" class= "systemButtons"height="16" width="16">
+      <circle cx="8"cy="8" r="8" stroke-color="red" width='3' fill="yellow" />
+    </svg>
+  </div>
+    <h id="title">Library</h>
+  </div>
+  <div id='Main'>
+    <p id='headTitle'> Basics of Python Functions </p>
+    <h class="header"> Functions </h>
+    <hr class='leftBreak'>
+    <p> Here is where you would put the lessons ♥ </p>
+    <p> Here is what a inline code block looks like <code class="singleCode">print("wow lets not shoot up schools")</code></p>
+    <p> Here is what block code looks like </p>
+<code class='blockCode'>
+<pre>
+You see here we would type code
+Notice how in the html it is against the wall and not neatly indented? Well you see we need the pre element in order to make indentions matter for languages like python!
+This way code looks all neat and nice! Yet if we use the pre format that means all indentions matter within the pre blockquote
+    so if we write here, we use two indentions in the html code and in the block code.
+Don't question it just go along with it C:
+</pre>
+</code>
+  </div>
+  <div id='bottom-border'>
+    <button id='backButton'>Back</button>
+    
+  </div>
+  <style>
+      #title {
+        text-align:center;
+        margin-right: 3%;
+      }
+      #headTitle {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      #main {
+        width: 90%;
+        background-color: #265e73;
+        margin: 50px;
+        padding-top: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-bottom: 20px;
+      }
+      #Main p {
+        display: block;
+
+      }
+      #headTitle {
+        text-align: center;
+        padding: right: 10px;
+      }
+      #topButtons {
+        position: sticky;
+        float: top;
+        width: 100%;
+        height: 25px;
+      }
+      .systemButtons {
+        position: sticky;
+        position: -webkit-sticky;
+        margin-top: 2px;
+        padding-top: 10px;
+        -webkit-app-region: no-drag !important;
+        float: left;
+        padding-left: 5px;
+      }
+      #top-border {
+        top: 0;
+        position: sticky;
+        width: 100%;
+        height: 50px;
+        background-color: #1e3137;
+        color: #337d99;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 40px;
+        -webkit-app-region: drag;
+
+      }
+      #bottom-border{
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background-color: #1e3137;
+        margin: 0;
+      }
+      #nextButton, #backButton  {
+        position: sticky;
+        background-color: inherit;
+        border: 0;
+        margin-left: 0;
+        width: 100px;
+        height : 100%;
+        font-size: 15px;
+        color: #337d99;
+      }
+      #nextButton:hover, #backButton:hover {
+        background-color: #265e73;
+      }
+      .header {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .leftBreak {
+        border-top-color: #183a47;
+        border: 0;
+        border-top: 5px solid;
+        width:  5%;
+        padding-left: 5px;
+        display: block;
+        float: left;
+      }
+
+      .blockCode {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          margin-right: 40px;
+          margin-left: 40px;
+          min-height: 10px;
+          display: block;
+          background-color: #1e3137;
+          color: #337d99;
+        }
+        .singleCode {
+        background-color: #1e3137;
+        color: #337d99;
+        }
+      .vertical.scrollbar {
+        height: 480px !important;
+      }
+      ::-webkit-scrollbar {
+          width: 12px;
+          background-color: #1e3137;
+      }
+
+      ::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+          border-radius: 10px;
+          background-color: #487684;
+      }
+
+      ::-webkit-scrollbar-thumb {
+
+          border-radius: 10px;
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        }
+
+      body {
+        margin: 0px;
+        color: #45a5ca;
+        background-color: #337d99;
+      }
+      p, h {
+          margin-left: 10px;
+      }
+
+    </style>
+
+<body>
+</html>
