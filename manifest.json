@@ -17,7 +17,7 @@
         "file4" : "basics.html"
       }
     },
-    "javascript": {
+  "javascript": {
       "basics": {
         "mainControl" : "jsMain.js",
         "main" : "main.html",
@@ -26,5 +26,6 @@
         "file3" : "jsFunctions.html",
         "file4" : "jsLoops.html"
       }
+
     }
 }
