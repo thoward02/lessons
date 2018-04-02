@@ -30,32 +30,37 @@
   </div>
   <div id='Main'>
     <p id='headTitle'> Basics of Python </p>
+    <h class='header'> Python </h>
+    <hr class='leftBreak'>
+    <p> Python is a programming language that is commonly used in back end systems, due to its simplicity. The language is commonly seen as the best for beginners due to its english like style. Don't worry though, it's still a programming language, and will make you want to blow your head out at times C: </p>
     <h class='header'> Variables </h>
     <hr class='leftBreak'>
-    <p> Variables are a way to store data within python. It tells your computer that hey this word has data inside of it. </p>
+    <p> Variables are a way to store data within any language, it tells your computer that hey this word has data inside of it. Without it we wouldn't be able to store any data at all! The idea behind it is pretty simple...</p>
     <code class="blockCode"> x = "hello" </code>
-    <p> This is how python states a variable. This code class="blockCode" lines tell the system that "X" has the word "hello" in it. Now we can say x, and the system will tell us "hello". This is how variables work, they store information, so that it may be used later. </p>
+    <p> This is how python states a variable. This code tell the system that "x" has the word "hello" in it. Now we can say x, and the system will tell us "hello". This is how variables work, they store information, so that it may be used later. </p>
     <p> There are 3 different types of variables </p>
     <h class='header'> Strings </h>
-
     <hr class='leftBreak'>
-    <p> Strings are words, and letters. When we declare a string within python we have to wrap it up in "", or the system won't understand and toss an error. For example the code class="blockCode" above is a string in a variable, as notated by the "" </p>
+    <p> Strings are words and letters. When we declare a string within python we have to wrap it up in "", or the system won't understand and toss an error. For example the code above is a string in a variable, as notated by the "" </p>
     <h class='header'> Ints </h>
     <hr class='leftBreak'>
-    <p> In the coding world these are refered to as ints, but their real name is integers. (It means numbers) This is shown in the code class="blockCode" below. </p>
+    <p> In the coding world numbers are refered to as ints, but their real name is integers. This is shown in the code below. </p>
     <code class="blockCode"> x = 10 </code>
     <p> Here we have set x to equal the number 10. We don't have to wrap it in "" because it is not a string. </p>
     <h class='header'> Boolean </h>
     <hr class='leftBreak'>
     <p> A boolean means true or false. That's it. Easy right? </p>
     <code class="blockCode"> x = True </code>
-    <p> Now since we are in python it is mandatory that you capitalize the T in true and F in false, or the system won't know it is a boolean. </p>
-
-    <p> But how do we access variables? The easiest way todo this is by using the "print()" function. What this does is it prints what ever is inbetween () to the console! </p>
+    <p> Now since we are in python it is mandatory that you capitalize the T in true and F in false, or the system won't know it is a boolean. Trust me you do not want to forget this... Few weeks ago I switched back to python and forgot to capitalize T... took me awhile to figure out the error .-. </p>
+    <p> But how do we access variables? The easiest way todo this is by using the "print()" function. What this does is it prints what ever is inbetween the <code class="singleCode">()</code> to the console! </p>
     <code class="blockCode"> print(x) </code>
+    <p> The code above prints out what ever was stored within the <code class='singleCode'>x</code> variable! </p>
     <p> We can print regular strings by putting words in a "" within the () of print. For example: </p>
     <code class="blockCode">print("Hows it flowin") </code>
-    <p> You can also print ints without wrapping them in "", but it doesn't matter</p>
+    <p> You can also print ints without wrapping them in "", because they aren't really strings. </p>
+    <p> You can even print multiple things at once! For example lets say what x is, but you wanna add some text before it! Well you can do this: </p>
+    <code class='blockCode'>print("x is: "+x)</code>
+    <p> The <code class='singleCode'>+</code> allows us to print variables and strings together! You can print any variable type together, but you must becareful! If you try and print a int and str together you'll get an error, but we'll explain this more in "Loops In Python". </p>
     <h class='header'> Conditionals </h>
     <hr class='leftBreak'>
     <p> None of this matters though without Condentionals. A condentional sets a condition for the program to meet, for example what do we do if we want to check if x equals the word "hey", and if so print "hello"? </p>
