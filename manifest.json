@@ -1,14 +1,13 @@
 {
   "Python": {
-    "description" : "Python is a programming language tht was primarily created for beginners to coding! Usually it is used to run back end operations such as servers! Below is what we have to teach for python!",
+      "data":{"description" : "Python is a programming language tht was primarily created for beginners to coding! Usually it is used to run back end operations such as servers! Below is what we have to teach for python!"},
       "Basics_Of_Python":{
-        "description" : "Inside here is the basics of python; From functions to variables we'll be trying to cover the basics!",
+        "description" : "Inside here is the basics of python; From functions to variables we will be trying to cover the basics!",
         "main" : "main.html",
         "mainControl" : "jsMain.js",
         "file1" : "Python_Basics.html",
         "file2" : "Functions_In_Python.html",
         "file3" : "Loops_In_Python.html"
-
       },
       "discordBot": {
         "description" : "Here you will learn how to create a Discord Bot, using the discord.py python api! Discord is a chat platform created for gamers!",
@@ -21,8 +20,9 @@
       }
     },
   "Javascript": {
-    "description" : "JavaScript is a programming language (usually) based inside of your browsers! It's what makes the webpage buttons click! Below is what we have to teach for JS",
-      "basics": {
+    "data":{"description" : "JavaScript is a programming language (usually) based inside of your browsers! It is what makes the webpage buttons click! Below is what we have to teach for JS"},
+        "basics": {
+        "description" : "Inside here is the basics of Js; From functions to variables we will be trying to cover the basics!",
         "mainControl" : "jsMain.js",
         "main" : "main.html",
         "file1": "jsBasics.html",
