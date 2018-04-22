@@ -1,6 +1,6 @@
 {
   "Python": {
-    "description" : "Python is a programming language that is primarily used as an introduction to coding! Usually it is used to run back end operations such as servers! Below is what we have to teach for python!",
+    "data":{"description" : "Python is a programming language that is primarily used as an introduction to coding! Usually it is used to run back end operations such as servers! Below is what we have to teach for python!"},
       "Basics_Of_Python":{
         "description" : "Inside here is the basics of python; From functions to variables we will be trying to cover the basics!",
         "main" : "main.html",
@@ -21,7 +21,8 @@
       }
     },
   "Javascript": {
-    "description" : "JavaScript is a programming language (usually) based inside of your browsers! It is what makes the webpage buttons click! Below is what we have to teach for JS",
+
+    "data":{"description" : "JavaScript is a programming language (usually) based inside of your browsers! It is what makes the webpage buttons click! Below is what we have to teach for JS"},
       "basics": {
         "mainControl" : "jsMain.js",
         "main" : "main.html",
