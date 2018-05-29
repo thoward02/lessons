@@ -10,7 +10,7 @@
         },
         "main" : "main.html",
         "mainControl" : "jsMain.js",
-        "file1" : "Python_Basics.html",
+        "file1" : "Variables_In_Python.html",
         "file2" : "Functions_In_Python.html",
         "file3" : "Loops_In_Python.html"
 
