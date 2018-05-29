@@ -3,6 +3,11 @@
     "data":{"description" : "Python is a programming language that is primarily used as an introduction to coding! Usually it is used to run back end operations such as servers! Below is what we have to teach for python!"},
       "Basics_Of_Python":{
         "description" : "Inside here is the basics of python; From functions to variables we will be trying to cover the basics!",
+        "assets" : {
+          "file1": "Comfortaa-Regular.ttf",
+          "file2": "Quicksand-Regular.ttf",
+          "file3": "Quicksand-Medium.ttf",
+        },
         "main" : "main.html",
         "mainControl" : "jsMain.js",
         "file1" : "Python_Basics.html",
