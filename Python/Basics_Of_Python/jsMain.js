@@ -15,14 +15,19 @@ function main(){
   var lesson1 = ['Variables', 'Variables_In_Python.html']
   var lesson2 = ['Functions', 'Functions_In_Python.html']
   var lesson3 = ['Loops', 'Loops_In_Python.html']
-  var lessons = [lesson1, lesson2, lesson3]
-  console.log(lessons[1])
-  for (var items in lessons) {
+  var lesson4 = ['Classes', 'Classes_In_Python.html']
+  var lessons = [lesson1, lesson2, lesson3, lesson4]
+
+  for (let items in lessons) {
     //lessons[items] -- Gives us the var lessonx where x is the loop number
-    var lessonButton = document.createElement('div')
-    document.getElementById("lessons").appendChild(lessonButton)
-    lessonButton.id = lessons[items][1]
-    lessonButton.innerHTML = lessons[items][0]
+    let lessonButton = document.createElement('div')
+    document.getElementById("lessonButtons").appendChild(lessonButton)
+    lessonButton.id = lessons[items][1];
+    //To adjust for text centering, i'm going to create a DIV just for text.
+    let lessonTitle = document.createElement("div");
+    lessonTitle.innerHTML = lessons[items][0];
+    lessonTitle.className = "lessonTitle";
+    lessonButton.appendChild(lessonTitle);
     lessonButton.className = "buttons";
     //There is a billy joel concert on october the 13 in Salem NC.... I wonder if I can go, always did enjoy Piano Man
     //WHEN I WORE A YOUNGER MANS CLOTHES sorry im bored xd
