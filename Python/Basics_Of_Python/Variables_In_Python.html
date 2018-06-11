@@ -34,7 +34,6 @@
 
     <p id='headTitle'> Variables in Python </p>
     <h class='header'> Variables, so what are they? </h>
-
     <p id="para"> Let us think back to our early days of algerbra, when we had to solve the problem "10 = X + 6". In our schools we were told that "X" represents the unknown, that it is a placeholder for an unknown value, that it could be anything at all. Now of course we all know in our little example here X can only equal "4", but what about when we really don't know the value? What if "X = Y / Z"? Well, the solution could be anything, for we could solve that equation so many ways by plugging in values for X, Y and Z!
     <p id="para"> Let's not get wrapped up in that though, for we're here to dive into Python! With that said, how does a variable relate to programming? Well a variable in programming *like it does in algerbra* represents the unknown, or a value that can not be deterimed at this time. This could be the number of hot dogs sold in a day, or what a boy wants for dinner. Well how do we define a variable in python? </p>
     <p id="para"> <code class="singleCode"> X = 10</code>  This is how we define variables in python. Imagine a box infront of you, and with a big marker write X. After you're done inscribing, put the number 10 inside of it! What you've created in your head is a variable, you created a box and named it X, and put the data 10 inside of it.  In programming we create variables (little boxes of data) and use them deal with data we may not know, or make typing easier on us. </p>
@@ -43,8 +42,21 @@
     <p id="para"> Ints, or other wise known as integers, are approximent numbers. Implying that they are numbers without a decimal, for example "1, 2, 3, 4". Like the code above they are just designated by saying <code class='singleCode'> variablename = number </code>. </p>
     <h class='header'> Floats </h>
     <p id="para"> Floats are percise numbers, using decimals. For example "1.0, 5.2, 2.4444, 6.456"! As always you state <code class='singleCode'> variablename = float </code>, and an example of this <code class='singleCode'> x = 6.22 </code>. If we were to check the value of X, we would get that X indeed equals 6.22 </p>
+    <h class='header'> Strings </h>
+    <p id="para"> Strigs, quite simply, are words and letters. I could sit here for many days attempting to explain further, but of course you can see now, that strings are the very words, and punctuation on your string. In python (and most langauages) we wrap strings in "" to show that they are string. So to display this, we're going to set x equal to the word "Js is gre8t". The code for this would be <code class="singleCode">x = "Js is gre8t"</code>. See you can even put numbers in strings, and the system will still count them as a string... Actually you can put anything in between your "" (or ''), and make it a string! </p>
+    <h class="header"> Lists </h>
+    <p id='para'> Lists are a bit tricky. Simply, lists are types of variables that can hold multiple data blocks in list format. Lets say we wanted to put apples, oranges, and my will to live in side of a variable, in this case lets call it x. In python we would write the code: <code class="singleCode">x = ["apples", "oranges", "my will to live"]</code> *note: you can put all types of variables inside of a list... strings, ints, floats, even other lists!*. </p>
+    <p id='para'> Now inside of x we have 3 strings, but how do we access them? In programming, we usually tell the program to spit out the values of a variable, in order to see its contents. Since we want to print out the values of X onto the screen, we would use python's <code class="singleCode">print()</code> function. Print is the command and what ever is inside of the () is put onto the screen. You can put any type of variable in there, or just plain data and it will print it out. For example <code class="singleCode"> print("ur g4y") </code> would put "ur g4y" onto the screen.
+    <p id="para"> Now lets take it back to the list we have inside of x. If we were todo:</p><pre>
+<code class="blockCode">
+x =  ["apples", "oranges", "my will to live"]
+print(x)
 
-
+</code>
+</pre>
+    <p id="para"> We would get <code class="singleCode">["apples", "oranges", "my will to live"]</code> printed out onto our screen. Now the obvious question that remains is, how do we access one value out of that list? Well we call the index of the list. Sounds fancy right? </p>
+    <p id="para"> Think of it like a line of students on a wall, where each one has a number on his chest. The first student has the number 0 on his chest, and then as you move from left to right, the numbers get larger. Lists are a lot like that, for each item in a list is assigned a value, starting at zero, so in our list "apples" is sat at spot zero. We can call that spot in a list by doing "print(variablename[spotnumber])". In use that would be shown as <code class='singleCode'>print(x[0])</code>, which would return apples on screen. You can change "0" out for any spot that resides in that list! Becarefull though, you can't get a value that does not exsist, so if we try and do <code class="singleCode"> print(x[3]) </code> we'll get an error because that value doesn't exsist!.</p>
+    <p id="end"></p>
   </div>
   <div id='bottom-border'><img id='backButton' src="assets/back.png"></img><img id='nextButton' src="assets/forward.png"></img></div>
 
@@ -57,11 +69,13 @@
     }
     #main {
       width: 100%;
-      height: 100%;
+      height: 90%;
       background-color: #204d5a;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      padding-bottom: 20px;
+      padding-bottom: 20%;
       overflow-y: auto !important;
+
+
     }
     #para {
       display: block;
@@ -69,6 +83,9 @@
       margin-left: 5%;
       font-size: 18px;
       font-family: Comfortaa;
+    }
+    #end {
+      padding: 15%;
     }
     #headTitle {
       text-align: center;
@@ -143,7 +160,7 @@
     .blockCode {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-right: 40px;
-        margin-left: 40px;
+        margin-left: 5%;
         min-height: 10px;
         display: block;
         background-color: #1e3137;
